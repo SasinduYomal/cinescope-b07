@@ -33,7 +33,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${inter.variable} ${inter.className} h-full antialiased`}
+      className={`${geistSans.variable} ${inter.variable} ${inter.className} h-full antialiased`} 
+      
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
