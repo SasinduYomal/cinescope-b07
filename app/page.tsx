@@ -1,14 +1,15 @@
-import Header from "@/components/shared/header";
+import HeroBanner from "@/components/landing/hero-banner";
 import Footer from "@/components/shared/footer";
+import MainNav from "@/components/shared/main-nav";
 
-export default function HomePage(){
-  return(
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-7 bg-amber-200 text-black p-4">
-        <p>Main Content</p>
-      </main> 
-      <Footer />
-    </div>
-  )
+export default function Homepage(){
+    return(
+        <div className="min-h-screen flex flex-col">
+            <MainNav />
+            <main className="flex-1">
+                <HeroBanner />
+            </main>
+            <Footer />
+        </div>
+    );
 }
